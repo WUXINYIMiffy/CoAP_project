@@ -8,7 +8,7 @@ path = "basic"
 def main():
     client = HelperClient(server=(host, port))
     while True :
-        response = client.put(path,"Hello world!")
+        response = client.put(path,"Today is a sunny day.")
         print(response.pretty_print())
         time.sleep(5) #5 seconds
     client.stop()
